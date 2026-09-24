@@ -1,0 +1,33 @@
+.notfound {
+  min-height: calc(100svh - var(--nav-h));
+  display: flex;
+  align-items: center;
+  padding-block: var(--s8);
+}
+
+.notfound-inner {
+  max-width: 640px;
+  margin-inline: 0;
+}
+
+.notfound-code {
+  font-family: var(--font-display);
+  font-size: clamp(6rem, 22vw, 11rem);
+  font-weight: 600;
+  line-height: 0.9;
+  letter-spacing: 0.04em;
+  color: transparent;
+  -webkit-text-stroke: 1px var(--border-strong);
+  user-select: none;
+}
+
+.notfound-text {
+  margin-top: var(--s4);
+}
+
+.notfound-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s3);
+  margin-top: var(--s6);
+}

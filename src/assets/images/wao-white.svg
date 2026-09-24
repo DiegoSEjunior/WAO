@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000">
+
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#f5f4f2"/>
+      <stop offset="100%" stop-color="#e9e8e5"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <circle cx="50%" cy="50%" r="42%" fill="none" stroke="#161618" stroke-opacity="0.1" stroke-width="1"/>
+  <circle cx="50%" cy="50%" r="30%" fill="none" stroke="#161618" stroke-opacity="0.08" stroke-width="1"/>
+  <path d="M -12% 103% A 95% 95% 0 0 1 116% -8%" fill="none" stroke="#161618" stroke-opacity="0.16" stroke-width="1.5"/>
+  <rect width="100%" height="100%" filter="url(#grain)" opacity="0.05"/>
+  
+  <g>
+    <path d="M 300 440 Q 250 400 205 335" fill="none" stroke="#ffffff" stroke-width="64" stroke-linecap="round"/>
+    <path d="M 500 440 Q 550 400 595 335" fill="none" stroke="#ffffff" stroke-width="64" stroke-linecap="round"/>
+    <circle cx="205" cy="335" r="32" fill="#ffffff" stroke="#161618" stroke-width="2.5"/>
+    <circle cx="595" cy="335" r="32" fill="#ffffff" stroke="#161618" stroke-width="2.5"/>
+    <rect x="300" y="430" width="200" height="330" rx="36" fill="#ffffff" stroke="#161618" stroke-width="2.5"/>
+    <rect x="344" y="398" width="112" height="88" rx="30" fill="#ffffff" stroke="#161618" stroke-width="2.5"/>
+    <path d="M 376 474 L 368 512" stroke="#161618" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 424 474 L 432 512" stroke="#161618" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="368" cy="512" r="7" fill="#161618"/>
+    <circle cx="432" cy="512" r="7" fill="#161618"/>
+    <rect x="356" y="556" width="88" height="64" rx="20" fill="none" stroke="#161618" stroke-width="2.5"/>
+    <rect x="300" y="712" width="200" height="52" rx="26" fill="none" stroke="#161618" stroke-width="2.5"/>
+    <text x="400" y="744" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="7" fill="#161618">WAO</text>
+    
+  </g>
+</svg>

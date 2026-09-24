@@ -1,0 +1,105 @@
+.newsletter-card {
+  position: relative;
+  max-width: 780px;
+  margin-inline: auto;
+  padding: clamp(40px, 7vw, 80px);
+  border-radius: var(--radius-lg);
+  background: var(--accent);
+  color: var(--accent-ink);
+  text-align: center;
+  border: 1px solid var(--border);
+  overflow: hidden;
+}
+
+.newsletter-card::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(600px 300px at 50% 0%, rgba(255, 255, 255, 0.08), transparent 70%);
+  pointer-events: none;
+}
+
+.newsletter-card .eyebrow {
+  color: color-mix(in srgb, var(--accent-ink) 72%, transparent);
+  justify-content: center;
+}
+
+.newsletter-card .eyebrow::before {
+  display: none;
+}
+
+.newsletter-title {
+  position: relative;
+  font-family: var(--font-display);
+  font-size: clamp(1.8rem, 4.5vw, 3rem);
+  font-weight: 500;
+  text-transform: uppercase;
+  letter-spacing: 0.02em;
+  line-height: 1.1;
+  margin-top: var(--s4);
+}
+
+.newsletter-text {
+  position: relative;
+  color: color-mix(in srgb, var(--accent-ink) 78%, transparent);
+  margin-top: var(--s3);
+  max-width: 46ch;
+  margin-inline: auto;
+}
+
+.newsletter-form {
+  position: relative;
+  display: grid;
+  gap: var(--s3);
+  margin-top: var(--s6);
+}
+
+.newsletter-form .field {
+  background: color-mix(in srgb, var(--accent-ink) 8%, transparent);
+  border-color: color-mix(in srgb, var(--accent-ink) 32%, transparent);
+  color: var(--accent-ink);
+}
+
+.newsletter-form .field::placeholder {
+  color: color-mix(in srgb, var(--accent-ink) 50%, transparent);
+}
+
+.newsletter-form .field:focus {
+  border-color: var(--accent-ink);
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent-ink) 22%, transparent);
+}
+
+.newsletter-form .btn-primary {
+  background: var(--accent-ink);
+  color: var(--accent);
+}
+
+.newsletter-form .btn-primary:hover {
+  background: color-mix(in srgb, var(--accent-ink) 88%, transparent);
+  color: var(--accent);
+}
+
+.newsletter-error {
+  position: relative;
+  margin-top: var(--s3);
+}
+
+.newsletter-success {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: var(--s6);
+  font-size: 15px;
+  font-weight: 500;
+  padding: 14px 22px;
+  border: 1px solid color-mix(in srgb, var(--accent-ink) 30%, transparent);
+  border-radius: var(--radius-pill);
+  background: color-mix(in srgb, var(--accent-ink) 10%, transparent);
+}
+
+@media (min-width: 620px) {
+  .newsletter-form {
+    grid-template-columns: 1fr auto;
+  }
+}

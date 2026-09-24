@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 900">
+
+  <defs>
+    <radialGradient id="bgGrad" cx="50%" cy="42%" r="75%">
+      <stop offset="0%" stop-color="#101012"/>
+      <stop offset="100%" stop-color="#1a1a22"/>
+    </radialGradient>
+    <filter id="grain">
+      <feTurbulence type="fractalNoise" baseFrequency="0.85" numOctaves="2" stitchTiles="stitch"/>
+      <feColorMatrix type="saturate" values="0"/>
+    </filter>
+  </defs>
+
+  <rect width="100%" height="100%" fill="url(#bgGrad)"/>
+  <circle cx="50%" cy="50%" r="42%" fill="none" stroke="#e6e2d8" stroke-opacity="0.1" stroke-width="1"/>
+  <circle cx="50%" cy="50%" r="30%" fill="none" stroke="#e6e2d8" stroke-opacity="0.08" stroke-width="1"/>
+  <path d="M -12% 103% A 95% 95% 0 0 1 116% -8%" fill="none" stroke="#e6e2d8" stroke-opacity="0.16" stroke-width="1.5"/>
+  <rect width="100%" height="100%" filter="url(#grain)" opacity="0.045"/>
+  
+  <text transform="rotate(-90 1130 470)" x="1130" y="470" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="600" letter-spacing="9" fill="#e6e2d8" fill-opacity="0.35">TEMPORADA 01</text>
+  <circle cx="820" cy="470" r="330" fill="none" stroke="#e6e2d8" stroke-opacity="0.12" stroke-width="1"/>
+  
+  <g>
+    <path d="M 720 440 Q 670 400 625 335" fill="none" stroke="#1c1c21" stroke-width="64" stroke-linecap="round"/>
+    <path d="M 920 440 Q 970 400 1015 335" fill="none" stroke="#1c1c21" stroke-width="64" stroke-linecap="round"/>
+    <circle cx="625" cy="335" r="32" fill="#1c1c21" stroke="#d8d5cb" stroke-width="2.5"/>
+    <circle cx="1015" cy="335" r="32" fill="#1c1c21" stroke="#d8d5cb" stroke-width="2.5"/>
+    <rect x="720" y="430" width="200" height="330" rx="36" fill="#1c1c21" stroke="#d8d5cb" stroke-width="2.5"/>
+    <rect x="764" y="398" width="112" height="88" rx="30" fill="#1c1c21" stroke="#d8d5cb" stroke-width="2.5"/>
+    <path d="M 796 474 L 788 512" stroke="#d8d5cb" stroke-width="6" stroke-linecap="round"/>
+    <path d="M 844 474 L 852 512" stroke="#d8d5cb" stroke-width="6" stroke-linecap="round"/>
+    <circle cx="788" cy="512" r="7" fill="#d8d5cb"/>
+    <circle cx="852" cy="512" r="7" fill="#d8d5cb"/>
+    <rect x="776" y="556" width="88" height="64" rx="20" fill="none" stroke="#d8d5cb" stroke-width="2.5"/>
+    <rect x="720" y="712" width="200" height="52" rx="26" fill="none" stroke="#d8d5cb" stroke-width="2.5"/>
+    <text x="820" y="744" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="21" font-weight="700" letter-spacing="7" fill="#d8d5cb">WAO</text>
+    
+  </g>
+</svg>
