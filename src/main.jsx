@@ -10,7 +10,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
     <ThemeProvider>
       <CartProvider>
-        <BrowserRouter>
+        <BrowserRouter basename="/WAO">
           <App />
         </BrowserRouter>
       </CartProvider>
