@@ -1,5 +1,5 @@
 import waoBlack from '../assets/images/wao-black.svg'
-import waoBone from '../assets/images/wao-bone.svg'
+import waoBone from '../assets/images/buzo-blanco.jpg'
 import waoGrey from '../assets/images/wao-grey.svg'
 import waoWhite from '../assets/images/wao-white.svg'
 
